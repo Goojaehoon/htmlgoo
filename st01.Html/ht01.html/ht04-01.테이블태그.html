@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>테이블 태그</title>
+    <style>
+        table, th, td {
+            border:1px solid gray;  /* 표의 테두리 - 1px 회색 실선 */
+            border-collapse:collapse;  /* 표 테두리와 셀 테두리 합치기 */
+        }
+    </style>
+</head>
+<body>
+
+    <pre>
+        테이블 태그:
+
+        table   :
+        thead :
+        tbody :
+        tfoot :
+        
+        th :
+        tr :
+        td :
+
+        colspan:
+        rowspan:
+		
+		colgroup:
+		col:
+		
+		caption:
+
+    </pre>
+
+    <h2>테이블 태그 실습</h2>
+    <table>
+        <caption>table 태그 실습
+        </caption>
+        <!-- 컬럼설정 : colgroup ,col -->
+        <colgroup>
+            <col width="130px">
+            <col width="280px">
+        </colgroup>
+
+        <!-- table header 설정 : thead, tr, th -->
+        <thead>
+            <tr>
+                <th>col 1</th>
+                <th>col 2</th>
+            </tr>
+        </thead>
+        <!-- table body 설정 : tbody tr,td-->
+        <tbody>
+            <tr>
+                <td>1-1</td>
+                <td>1-2</td>
+            </tr>
+            <tr>
+                <td>2-1</td>
+                <td>2-2</td>
+            </tr>
+            <tr>
+                <td>3-1</td>
+                <td>3-2</td>
+            </tr>
+        </tbody>
+        <!-- table-footer 설정 : tfoot tr,td-->
+        <tfoot>
+            <tr>
+                <td colspan="2">summery</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+
+
+

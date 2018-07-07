@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 반응 선택자</title>
+    <style type="text/css">
+        h1:active {color: blue}
+        h1:hover {color: red}
+
+        a:active {color: blue; background-color: green}
+        a:hover {color: red; background-color: blue}
+        a:visited {color: pink}
+        a:link {color: orange}
+
+        /*인풋태그에 포커스가 있으면 배경색이 노란색이 되도록 만드시오*/
+        input:focus {background-color: yellow;}
+
+        /*인풋태그에 체크드가 설정되면 테두리 boder, outer 를 만드시오*/
+        input:checked {outline: 1px solid black;}
+
+        /*인풋태그에 체크 되면 배경색을 회색이 되도록 만드시오*/
+        input:disabled {background-color: gray;}
+
+
+    </style>
+</head>
+<body>
+    <h1>반응 선택자</h1>
+    <h1>반응 선택자</h1>
+    <h1>반응 선택자</h1>
+    <hr>
+    <a href="http://www.naver.com" target="_blank">naver</a>
+    <a href="http://www.daum.net" target="_blank">kakao</a>
+    <a href="http://www.google.com" target="_blank">google</a>
+    <hr>
+    <input type="text" name="" />
+    <input type="checkbox" name="checked" />
+    <input type="text" name="disabled" />
+</body>
+</html>

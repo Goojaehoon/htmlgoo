@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        label { width:120px; display:inline-block; }
+    </style>
+</head>
+<body>
+    <!-- form 태그 필요 속성 3가지 추가. -->
+    <form action="" method="" enctype="">
+
+        <!-- 로그인 -->
+        <fieldset>
+            <legend>입력양식 </legend>
+            <ul>
+                <li>
+                    <label for="userid">아이디:</label>
+                    <input type="text" name="userid" id="userid" autofocus required>
+                </li>
+                <li>
+                    <label for="password">패스워드: </label>
+                    <input type="password" name="password" id="password" required>
+                </li>
+            </ul>
+        </fieldset>
+
+        <!-- 회원가입 -->
+        <fieldset>
+            <legend>회원가입 </legend>
+            <ul>
+                <li>
+                    <label for="userid1">아이디:</label>
+                    <input type="text" name="userid" id="userid1"required>
+                </li>
+                <li>
+                    <label for="password1">패스워드: </label>
+                    <input type="password" name="password" id="password1"required>
+                </li>
+                <li>
+                    <label for="pwcheck">패스워드 확인:</label>
+                    <input type="password" name="pwcheck" id="pwcheck" required>
+                </li>
+                <li>
+                    <label for="username">이름: </label>
+                    <input type="text" name="username" id="username" placeholder="이름을 입력하세요">
+                </li>
+                <li>
+                    <label for="useremail">이메일: </label>
+                    <input type="email" name="useremail" id="useremail" placeholder="이메일을 입력하세요">
+                </li>
+                <li>
+                    <label for="phone">전화번호: </label>
+                    <input type="number" name="phone" id="phone">
+                </li>  
+                <li>
+                    <label for="birth">생년월일: </label>
+                    <input type="date" name="birth" id="birth">
+                </li>                   
+            </ul>
+        </fieldset>
+
+        <!-- 수강신청 -->
+        <fieldset>
+            <legend>수강신청</legend>
+            <ul>
+                <li>
+                    <label for="englow">영어초급: </label>
+                    <input type="radio" name="subject" id="englow" checked>    
+                </li>
+                <li>
+                    <label for="engmid">영어중급: </label>
+                    <input type="radio" name="subject" id="engmid">    
+                </li>
+                <li>
+                    <label for="enghigh">영어고급: </label>
+                    <input type="radio" name="subject" id="enghigh">    
+                </li>
+            </ul>
+            <ul>              
+                <li style="list-style:decimal; ">
+                    <label for="englow1">영어초급: </label>
+                    <input type="checkbox" name="englow" id="englow1">    
+                </li>
+                <li style="list-style:decimal; ">
+                    <label for="engmid1">영어중급: </label>
+                    <input type="checkbox" name="engmid" id="engmid1">    
+                </li>
+                <li style="list-style:decimal; ">
+                    <label for="enghigh1">영어고급: </label>
+                    <input type="checkbox" name="enghigh" id="enghigh1"checked>    
+                </li>
+                
+                
+            </ul>
+        </fieldset>
+
+        <!-- selec박스 -->
+        <fieldset>
+            <legend>select박스</legend>
+            <ul>
+                <li>
+                    <label for="select-id">학과: </label>
+                    <select name="select" id="select-id">   
+                        <optgroup label="사회과학대학">
+                            <option value="1">경제학과</option>
+                            <option value="2">경영학과</option>
+                        </optgroup>
+                        <optgroup label="공과대학">    
+                            <option value="3">건축과</option>    
+                            <option value="4">토목과</option> 
+                            <option value="5">건축과</option>     
+                        </optgroup>
+                            
+                </li>
+            </select>
+        </fieldset>
+        <fieldset>
+            <ul>
+                <li>
+                    <select>
+                        <optgroup label="공과대학">
+                            <option>건축과</option>
+                            <option>토목과</option>
+                        </optgroup>
+                        <optgroup label="정보통신대학">
+                        <option>정보과</option>
+                        <option>컴퓨터공학과</option>
+                        </optgroup>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+                <input type="submit" name="" value="전송">
+                <input type="reset" name="" value="초기화">
+        <!-- 전송 버튼 : form 을 완료 -->
+        <!-- 초기화 버튼 :  form 입력 값을 초기화  -->
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>div 안에 div 가운데 정렬</title>
+</head>
+<body>
+    <h1> 수평 가운데 정렬 </h1>
+
+    <h2>display: flex; align-items: center; </h2>
+    <div class="p" style="display: flex; align-items:center;">
+        <div class="c" >
+            test
+        </div>
+    </div>
+
+    <hr >
+    <h2>display: flex; align-items: center; </h2>
+    <div class="p" style="text-align:center;">
+        <div class="c" style="margin: 0 auto; ">
+            test
+        </div>
+    </div>
+
+    <hr >
+    <div class="p" style="text-align:center;">
+        <div class="c" style="display:inline-block;  ">
+            test
+        </div>
+    </div>
+
+
+    <hr >
+    <h2>display: table, table-cell </h2>
+    <div class="outer">
+        <div class="inner">
+          <div class="centered">
+          </div>
+        </div>
+    </div>
+</body>
+</html>

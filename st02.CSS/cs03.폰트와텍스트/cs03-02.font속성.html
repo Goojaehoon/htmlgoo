@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>무제 문서</title>
+    <style type="text/css">
+      /*내부폰트를 사용하기 */
+      #font1 {font-family: serif;}
+      #font2 {font-family: "휴먼편지체" , "맑은고딕";}
+
+      /*외부 폰트 사용하기 - @import : 사용 */
+ 
+      @import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+      #font3 {font-family: 'Nanum Pen Script', serif;}
+
+      @font-face {
+       font-family: 'NanumBarunGothic';
+       font-style: normal;
+       font-weight: 400;
+       src: url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+       src: url('http://cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+      }
+      #font4 {font-family: 'NanumBarunGothic'}
+
+      /*font-style 속성*/
+      .no1 {font-style: normal;} 
+      .no2 {font-style: italic;}
+      .no3 {font-style: oblique;}
+
+
+    </style>
+</head>
+<body>
+
+   <h2> 내부폰트를 사용하는 텍스트 </h2>
+
+   <p id="font1"> serif font를 이용하여 폰트를 적용한 텍스트 !!! </p>
+   <p id="font2"> 나눔고딕 font를 이용하여 폰트를 적용한 텍스트 !!! </p>
+
+   @font-face를 사용하는 텍스트 !!!
+   나눔 고딕 폰트 설치
+
+   <h2> 외부폰트를 사용하느 텍스트 </h2>
+   <p id="font3"> @import를 사용한 텍스트 !!! </p>
+   <p id="font4"> @font-face를 사용한 텍스트 !!! </p>
+
+  <p class = "no1"> font-style 속성 값 : normal </p>
+  <p class = "no2"> font-style 속성 값 : italic </p>
+  <p class = "no3"> font-style 속성 값 : oblique </p>
+</body>
+</html>
+
+

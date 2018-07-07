@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Fluid Grid Layout</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1 class="header-text">가변 이미지와 가변 비디오</h1>
+        </header>
+        <div id="wrapcontent">
+            <section class="content">
+                <article>
+                    <h4>가변 이미지 방법 1 : max-width:100%; </h4>
+                    <img src="../images/shop-large.jpg">
+                </article>
+
+                <article>
+                    <h4>가변 이미지 방법 2 : picture , source , img </h4>
+                    <picture>
+                        <source srcset="../images/shop-large.jpg" media="(min-width:1024px)">
+                        <source srcset="../images/shop-medium.jpg" media="(min-width:768px)">
+                        <source srcset="../images/shop-small.jpg" media="(min-width:320px)">
+                        <img src="../images/shop.jpg" alt="fill with coffee" style="width:100%;">
+                    </picture>
+                </article>
+            </section>
+            <aside class="right-side">
+                <h4>사이드바</h4>
+
+                <article>
+                    <h4>가변 비디오 : </h4>
+                    <video autoplay loop src="../media/cars.mp4">           </video>
+                </article>
+            </aside>
+        </div>
+        <footer>
+            <h4>푸터</h4>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>상태선택자</title>
+    <style type="text/css">
+        ul {list-style-type: none;}
+        ul > li {display: inline-block}
+        ul > li {
+                background-color: red; padding: 15px; border-color: red; margin: -3px}
+        ul > li:nth-child(odd) {background-color: red; }
+        ul > li:nth-child(even) {background-color: #00FF86 }
+
+        ul > li:first-child  {border-radius: 10px 0 0 10px } /* 첫번째 li*/
+        ul > li:last-child   {border-radius: 0 10px 10px 0} 
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1번째</li>
+        <li>2번째</li>
+        <li>3번째</li>
+        <li>4번째</li>
+        <li>5번째</li>
+        <li>6번째</li>
+        <li>7번째</li>
+        <li>8번째</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>지역별 홍차</title>
+    <style>
+    table, th, td {
+        border:1px solid gray;  /* 표의 테두리 - 1px 회색 실선 */
+        border-collapse:collapse;  /* 표 테두리와 셀 테두리 합치기 */
+    }
+    th, td {
+        width:150px;  /* 셀 너비 */
+        padding:5px;  /* 셀 패딩(테두리와 내용 사이의 여백) */
+    }
+    caption {
+        font-size:20px;  /* 표 설명글 글자 크기 */
+        margin:10px;  /* 표 설명글 주변 여백 */
+        font-weight:bold;  /* 표 설명글 글자 굵게 */
+    }
+</style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col width="150">
+            <col width="120">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th colspan="2">지역별 홍차 </th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3", style="text-align: center;"><b>중국</b></td>
+
+                <td>정산소중</td>
+            </tr>
+            <tr>
+                <td>기문</td>                
+            </tr>
+            <tr>
+                <td>운남</td>                
+            </tr>
+            <tr>
+                <td rowspan="4", style="text-align: center"><b>인도 및 쓰리랑카</b></td>
+                <td>아삼</td>
+            </tr>
+            <tr>
+                <td>실론</td>                
+            </tr>
+            <tr>
+                <td>다질링</td>                
+            </tr>
+            <tr>
+                <td>닐기리</td>                
+            </tr>
+        </tbody>
+        
+    </table>
+
+</body>
+</html>

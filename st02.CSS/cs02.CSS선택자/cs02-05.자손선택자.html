@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>자손선택자</title>
+    <style type="text/css">
+        /*자식선택자 
+            아이디 header 의 자식중에 h1을 찾고 
+            폰트의 색깔을 red로 만드시오*/
+        #header h1 {color: red}
+
+        /*후손 건택자
+            아이디 section 의 자손들중 h1 을 찾아서
+            h1 폰트의 색깔을 orange 로 만드시오*/
+        #section > h1 {color: orange}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1 class="title">Lorem ipsum</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+        </div>
+    </div>
+    <div id="section">
+        <h1 class="title">Lorem ipsum</h1>
+        <div>Lorem ipsum dolor sit amet,
+            <h1>consectetur</h1>
+            adipiscing elit.
+        </div>
+    </div>
+</body>
+</html>

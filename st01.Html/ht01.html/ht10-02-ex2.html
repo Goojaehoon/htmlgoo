@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+
+    /*뼈대만들기*/
+    header  { height: 60px;}
+    nav     {width: 30%; float:left;}
+    article {width: 30%; float:left;}
+    aside   {width: 30%; float:right;}
+    footer  {height: 60px; clear: both;}
+   
+    nav, article, aside {height: 300px}
+
+    /*배경색 지정*/
+    header  {background-color: #17CBB7;}
+    nav     {background-color:#e9e661;}
+    article {background-color:#95db5e;}
+    aside   {background-color:#efb14e; }
+    footer  {background-color: #78d0d1;}
+
+    article > section {background-color: #c885b1;}
+    aside   > section {background-color: #f35514}
+
+    /*여백주기*/
+    header  {margin:0 0 20px 0;}
+    nav     {margin:0 0 20px 0;}
+    article {margin:0 5% 0 5%;}
+    aside   {margin:0 0 20px 0;}
+    footer  {margin:0 0 0 0;}
+
+    article > section {margin:20px}
+    aside > section {margin:20px }
+
+
+</style>
+</head>
+<body>
+    <!-- 헤더 중앙 좌측영역-->
+    <header> 
+        header
+    </header>
+
+    <!-- nav -->
+    <div id="wrapbody">
+        <nav>
+            nav
+        </nav>
+        <!-- 아티클 중앙2영역 -->
+        <article>
+            article
+                <section>
+                    section
+                </section>
+                <section>
+                    section
+                </section>
+        </article>
+        <!-- aside 중앙 3영역 -->
+        <aside>
+            aside
+                <section>
+                    section
+                </section>
+                <section>
+                    section
+                </section>
+                <section>
+                    section
+                </section>
+        </aside>
+    </div>
+
+    <!--푸터-->
+    <footer>
+        footer
+    </footer>
+
+</body>
+</html>

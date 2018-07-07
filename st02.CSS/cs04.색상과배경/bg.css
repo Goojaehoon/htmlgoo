@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+body {
+    margin: 20px;
+    line-height: 1.5;
+    font-family: "맑은 고딕", Dotum, sans-serif;
+    font-size: 0.9em;
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    color: #fff;
+}
+h1, h2 {
+    font-weight: normal;
+    color: #369ff7;
+}
+h1 {
+    font-size: 28px;
+}
+h2 {
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 20px;
+}
