@@ -3,6 +3,42 @@
 <head>
     <meta charset="utf-8">
     <title>HTML5 Basic Page</title>
+
+    <style type="text/css">
+
+        #main-navigation {
+                            border:thin solid; 
+                            border-top-color: #C1BFBF;
+                            border-left: hidden;
+                            border-right: hidden;
+                            border-bottom-color: #C1BFBF;
+                            margin-left: 20px;
+                            z-index: 1;
+                            }
+        #main-navigation > .pull-right
+                     {float: right;
+                    z-index:2;}
+
+        nav div ul li {display: inline-block;
+                       }
+
+        #main-section {float: left;
+                       width: calc(100% - 200px)}
+        #main-aside {float: right;
+                    width:200px; }
+        .aside-list > ul > li {display: grid;}
+        #main-footer {clear: both;}
+
+
+
+
+
+
+
+    </style>
+
+
+
 </head>
 <body>
     <div id="page-wrapper">
@@ -17,31 +53,16 @@
                 <ul class="outer-menu">
                     <li class="outer-menu-item">
                         <span class="menu-title">HTML5</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
+                        
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">CSS3</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
+                 
+                  
                     </li>
                     <li class="outer-menu-item">
                         <span class="menu-title">JavaScript</span>
-                        <ul class="inner-menu">
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                            <li class="inner-menu-item"><a href="#">데이터</a></li>
-                        </ul>
+      
                     </li>
                 </ul>
             </div>
@@ -98,7 +119,8 @@
         </footer>
     </div>
 </body>
-</html>
+</html>
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
     $(document).ready(function () {

@@ -3,13 +3,70 @@
 <head>
     <meta charset="utf-8">
     <title>박스모델</title>
+    <style type="text/css">
+        #borderstyle > div {border-width: 1px; border-color: #000000;
+                            width: 120px; float: left; 
+                            margin: 0 20px 0 20px;
+                            height: 100px;}
+        #borderstyle > .box1 {border-style: solid;}
+        #borderstyle > .box2 {border-style: dotted;}
+        #borderstyle > .box3 {border-style: dashed;}
+        #borderstyle > .box4 {border-top-style: solid; 
+                              border-right-style: dotted;
+                              border-bottom-style: dashed;
+                              border-left-style: groove;
+                              }
+
+        #bordercolor {clear: both;}
+        #bordercolor > div {
+                            border-width: 3px;
+                            border-style: dotted;
+                            float: left;
+                            width: 120px;
+                            margin: 0 20px 0 20px;
+                            height: 100px;}
+
+        #bordercolor > .box1 {border-color: #FF0000}
+        #bordercolor > .box2 {border-color: #2400FF}
+        #bordercolor > .box3 {border-top-color: #000000; 
+                              border-right-color: #FF0000;
+                              border-bottom-color: #1A00FF;
+                              border-left-color: #FFF200;}
+        #bordercolor > .box4 {border-top-color: #000000; 
+                              border-right-color: #FF0000;
+                              border-bottom-color: #1A00FF;
+                              border-left-color: #FFF200;}
+
+        #borderwidth {clear: both;}
+
+        #borderwidth > div {
+                            border-width: 1px;
+                            border-style: solid;
+                            float: left;
+                            width: 120px;
+                            margin: 0 20px 0 20px;
+                            height: 100px;}
+
+        #borderwidth >.box1 {border-width: 2px;}
+        #borderwidth >.box2 {border-width: 5px;}
+        #borderwidth >.box3 {border-width: 5px;}
+        #borderwidth >.box4 {border-top-width: 3px;
+                             border-right-width: 5px;  
+                             border-bottom-width: 10px;
+                             border-left-width: 20px;}
+        
+
+
+
+    </style>
 </head>
 <body>
     <div id="borderstyle">
         <h2>border style</h2>
-        <div class="box1"> </div>
-        <div class="box2"> </div>
-        <div class="box3"> </div>
+        <div class="box1"> solid </div>
+        <div class="box2"> dotted</div>
+        <div class="box3"> dashed</div>
+        <div class="box4"> 4면에 다른스타일 적용</div>        
     </div>
 
     <div id="bordercolor">
@@ -30,4 +87,4 @@
     </div>
 
 </body>
-</html>
+</html>
